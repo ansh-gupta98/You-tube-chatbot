@@ -1,32 +1,24 @@
-# =============================================================================
-# Backend Dependencies — YouTube Chatbot Pro
-# =============================================================================
-fastapi==0.115.0
-uvicorn[standard]==0.30.6
-python-dotenv==1.0.1
-python-multipart==0.0.9
-pydantic==2.9.2
-pydantic-settings==2.5.2
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.6
+python-dotenv>=1.0.1
+python-multipart>=0.0.9
+pydantic>=2.10.0
+pydantic-settings>=2.6.0
 
 # LangChain
-langchain==0.3.7
-langchain-core==0.3.15
-langchain-community==0.3.5
-langchain-text-splitters==0.3.2
+langchain>=0.3.7
+langchain-core>=0.3.15
+langchain-community>=0.3.5
+langchain-text-splitters>=0.3.2
 
 # Vector store
 faiss-cpu>=1.12.0
 
-# LLM Providers (install the ones you need)
-langchain-google-genai==2.0.1     # Google Gemini
-langchain-openai==0.2.5            # OpenAI / NVIDIA NIM / Groq (OpenAI-compatible)
-langchain-anthropic==0.2.3         # Anthropic Claude
-langchain-huggingface==0.1.2       # FREE local embeddings fallback
+# LLM Providers
+langchain-google-genai>=2.0.1
+langchain-openai>=0.2.5
+langchain-anthropic>=0.2.3
+langchain-huggingface>=0.1.2
 
 # YouTube transcript
-youtube-transcript-api==0.6.2
-
-# Whisper fallback (optional — only needed for videos without captions)
-# openai-whisper==20231117
-# yt-dlp==2024.10.7
-
+youtube-transcript-api>=0.6.2
