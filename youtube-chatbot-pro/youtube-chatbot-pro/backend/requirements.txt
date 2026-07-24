@@ -30,5 +30,3 @@ youtube-transcript-api==0.6.2
 # openai-whisper==20231117
 # yt-dlp==2024.10.7
 
-# CORS
-corsheaders==0.0.1
