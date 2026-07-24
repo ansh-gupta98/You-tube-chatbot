@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-900 text-white min-h-screen;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    background-attachment: fixed;
+  }
+  * { font-family: 'Segoe UI', 'Inter', system-ui, sans-serif; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-dark-600 hover:shadow-lg hover:shadow-primary/50
+           text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300
+           hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .card {
+    @apply bg-dark-800/60 backdrop-blur border border-white/10 rounded-xl p-5;
+  }
+  .input {
+    @apply bg-dark-800 border border-primary/50 rounded-lg px-3 py-2 text-white
+           w-full focus:outline-none focus:ring-2 focus:ring-primary/50;
+  }
+  .tab-active {
+    @apply bg-gradient-to-r from-primary to-dark-600 text-white;
+  }
+  .chip {
+    @apply inline-block bg-gradient-to-r from-primary to-dark-600 text-white
+           px-3 py-1 rounded-full text-xs font-medium m-1;
+  }
+  .user-bubble {
+    @apply bg-gradient-to-br from-indigo-500 to-purple-700 text-white p-3 rounded-2xl
+           rounded-tr-sm ml-auto max-w-[85%] shadow-lg;
+  }
+  .bot-bubble {
+    @apply bg-gradient-to-br from-blue-800 to-blue-600 text-white p-3 rounded-2xl
+           rounded-tl-sm max-w-[85%] shadow-lg;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1a1a2e; }
+::-webkit-scrollbar-thumb { background: #e94560; border-radius: 4px; }
