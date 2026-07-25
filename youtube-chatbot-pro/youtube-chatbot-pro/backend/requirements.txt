@@ -22,3 +22,6 @@ langchain-huggingface>=0.1.2
 
 # YouTube transcript
 youtube-transcript-api>=0.6.2
+
+# Render/Uvicorn worker
+gunicorn>=22.0.0
